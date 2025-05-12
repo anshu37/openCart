@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="utilities.ExtentReportManager" />
+    </listeners>
+
+    <test verbose="2" preserve-order="true" name="C:/MyFiles/Repositories/openCart">
+        <parameter name="os" value="Windows"></parameter>
+        <parameter name="browser" value="chrome"></parameter>
+<!--        <parameter name="browser" value="edge"></parameter>-->
+
+        <classes>
+            <class name="testCases.TC001_AccountRegistrationTest">
+            </class>
+
+            <class name="testCases.TC002_LoginTest">
+            </class>
+
+<!--            <class name="testCases.TC003_Login_DataDrivenTest">-->
+<!--            </class>-->
+        </classes>
+    </test>
+</suite>
